@@ -1,0 +1,19 @@
+body {
+  border: 10px solid red;
+}
+/* Elément container en display flex*/
+#container {
+  display: flex;
+  flex-direction: row;
+  border: 10px solid green;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 70vh;
+  align-items: flex-start;
+  align-content: normal;
+}
+#container > div {
+  border: 1px solid blue;
+  flex-basis: 30%;
+  margin: 0;
+}
