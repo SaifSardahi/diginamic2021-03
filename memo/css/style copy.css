@@ -1,7 +1,6 @@
 #logo-title {
-  display: flex;
-  justify-content: center;
-  
+  display: table;
+  margin: 0 auto; /* auto permet de centrer */
 }
 .bg-secondary {
   background-color: #6C757D;
@@ -9,36 +8,41 @@
   padding: 10px 0;
 }
 #logo-title > *{
-  
+  float: left;
+  margin: 5px 10px;
 }
 h1 {
   font-size: 2rem;
 }
 .main-nav {
+  clear: both;
   list-style: none;
-  display: flex;
-  justify-content: center;
+  display: table;
+  margin: 15px auto;
+
 }
 .main-nav li {
+  float: left;
+  margin: 0 15px;
   font-size: 1.5em;
-  margin: 0 10px;
 }
 
 main {
+  width: 90%;
+  margin: 0 auto;
 }
 
 h2 {
   font-size: 1.8rem;
 }
-.columns {
-  display: flex;
-  justify-content: space-around;
-}
+
 .column {
- flex-basis: 23%;
+  float: left;
+  width: 22%;
+  margin: 0 4% 0 0;
 }
 #column-last {
- 
+  margin: 0;
 }
 h3 {
   font-size: 1.6rem;
@@ -56,10 +60,10 @@ h4 {
   margin: 15px 0 10px 0;
 }
 footer {
- display: flex;
- justify-content: center;
+  clear: both;
 }
 
 footer button {
- 
+  margin: 20px auto;
+  display: table;
 }

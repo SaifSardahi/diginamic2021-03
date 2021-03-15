@@ -8,12 +8,12 @@ body {
   border: 10px solid green;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 70vh;
+  height: 500px;
   align-items: flex-start;
-  align-content: normal;
+  align-content: stretch;
 }
 #container > div {
-  border: 1px solid blue;
-  flex-basis: 30%;
+  border: 10px solid blue;
+  width: 30%;
   margin: 0;
 }
