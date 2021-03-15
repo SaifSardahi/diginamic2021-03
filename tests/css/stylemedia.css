@@ -1,0 +1,45 @@
+* {
+  border: 1px solid black;
+}
+h1 {
+  margin: 0;
+}
+
+body > header > * {
+  float: left;
+  width: 50%;
+  /* box-sizing permet de prendre en compte directement le paddding
+  et la bordure dans le calcul de la largeur (width) */
+  box-sizing: border-box;
+}
+main {
+  clear: both;
+}
+/* Actualités */
+main > article {
+  float: left;
+  width: 25%;
+  padding: 0 20px 0 0;
+  box-sizing: border-box;
+}
+
+/* Media queries */
+/* Les media queries sont des conditions qui se basent en général 
+ sur la largeur de l'écran */
+/* Ecran plus petit que 768px */
+ @media screen and (max-width: 767px) {
+  * {
+    border: 1px solid red;
+  }
+  body > header > * {
+    float: none;
+    width: auto;
+    box-sizing: initial;
+  }
+  main > article {
+    float: none;
+    width: auto;
+    padding: 0 10px;
+    box-sizing: initial;
+  }
+ }

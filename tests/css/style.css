@@ -1,0 +1,44 @@
+* {
+  border: 1px solid black;
+  line-height: 1.5;
+}
+body {
+  background: url(./../images/bg.jpg) no-repeat 200px 500px;
+}
+img {
+  /* L'image fera au maximum 100% de l'élément parent */
+  max-width: 100%;
+}
+article img {
+  /* Signifie que l'image va "flotter" à gauche et que les éléments se situeront
+  à sa droite */
+  
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 5px solid red;
+  display: block;
+  /* display: none; */
+}
+h2 {
+  /* Signifie que s'il existe un élément flottant, on passe dessous */
+  clear: both;
+  color: blue;
+  
+}
+span {
+  /* display: block; */
+}
+p {
+  font-size: 1.5rem; /*24px*/
+  box-sizing: border-box;
+   padding: 2%; /*16px*/
+   margin: 2%;
+   border: 1px solid blue;
+   border-radius: 50px;
+   width: 46%;
+   float: left;
+   
+}
+article {
+  clear: both;
+}

@@ -1,0 +1,40 @@
+/* Tous les éléments */
+* {
+  border: 1px solid black;
+}
+/* Body */
+body {
+  border: 10px solid yellow;
+}
+/* Titres */
+/* Utilisation des id */
+#title-news {
+  color: grey;
+  font-weight: bold;
+  background-color: transparent;
+}
+/* Se lit : les h1 et les h2 */
+h1, h2 {
+  background-color: red;
+}
+article > h3 {
+  background-color: cadetblue;
+}
+/* Paragraphes ***********************************************************/
+p {
+  background-color: yellowgreen;
+}
+/* Headers et descendance ***************************************************************/
+/* se lit : les headers qui sont dans un article qui est lui même dans une section */
+section article header {
+  background-color: burlywood;
+}
+section article > header {
+  background-color: blue;
+}
+/* Utilisation des classes */
+.article-danger {
+  border: 1px solid red;
+  padding: 20px;
+  font-size: 2em;
+}
