@@ -1,0 +1,20 @@
+@media screen and (max-width: 992px) {
+  .column-memo{
+    width: 95vw !important; /* presque toute la largeur de l'écran */
+    min-width: 95vw !important;
+  }
+  /* On fixe la largeur du main à la taille de l'écran (un peu moins pour les marge)
+  et lui dit que s'il a un enfant qui est plus large que lui, alors 
+  un ascenceur horizontal doit apparaître */
+  main.container {
+    overflow-x: scroll !important;
+    width: 95vw !important; /* presque toute la largeur de l'écran */
+    min-width: 95vw !important;
+  }
+  /* le wrapper des colonnes fait 4 fois la largeur de l'écran */
+  .columns-memo {
+    width: 400vw !important; /* 4 fois la largeur de l'écran */
+    min-width: 400vw !important;
+  }
+  
+}
